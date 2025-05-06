@@ -1,0 +1,29 @@
+package com.example.helloapp.controller;
+
+package com.example.helloapp.controller;
+
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+public class HelloController {
+
+    @GetMapping("/")
+    public String helloWorld() {
+        return "✅ Hello from Spring Boot!";
+    }
+
+    @GetMapping("/hello")
+    public String helloWithQuery(@RequestParam String name) {
+        return "Hello, " + name;
+    }
+
+    @GetMapping("/hello/{name}")
+    public String helloWithPath(@PathVariable String name) {
+        return "Hello, " + name;
+    }
+
+    @PostMapping("/hello-body")
+    public String helloWithBody(@RequestBody String name) {
+        return "Hello, " + name;
+    }
+}

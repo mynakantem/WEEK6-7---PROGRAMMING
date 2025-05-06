@@ -1,0 +1,28 @@
+package com.example.helloapp.controller;
+
+import com.example.helloapp.model.Greeting;
+import com.example.helloapp.repository.GreetingRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/greetings")
+public class GreetingController {
+
+    @Autowired
+    private GreetingRepository repository;
+
+    @PostMapping
+    public Greeting addGreeting(@RequestBody Greeting greeting) {
+        return repository.save(greeting);
+    }
+
+    @GetMapping
+    public List<Greeting> getAll() {
+        return repository.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public Greeting getGreetingById(@Path
