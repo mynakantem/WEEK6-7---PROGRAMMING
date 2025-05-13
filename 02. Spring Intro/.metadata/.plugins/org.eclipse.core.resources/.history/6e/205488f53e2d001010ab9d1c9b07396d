@@ -1,0 +1,5 @@
+package com.example.helloapp.repository;
+
+public interface GreetingRepository {
+
+}

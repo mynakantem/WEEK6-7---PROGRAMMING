@@ -1,0 +1,5 @@
+package com.example.helloapp.model;
+
+public class Greeting {
+
+}

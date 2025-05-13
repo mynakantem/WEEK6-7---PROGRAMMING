@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\mynak\Desktop\java projects\week6&7\01. Tomcat Servlet\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3218463357.index
+3374594226.index
+4169323707.index
+1929755920.index
+398675608.index
+4066473351.index
